@@ -12,6 +12,8 @@ import java.util.Date;
  * @Created 26 / 03 / 2020 - 2:32 PM
  * @project SpringRestAPI
  * @Author Hamdamboy
+ * 
+ * handle exception
  */
 
 @ControllerAdvice

@@ -52,15 +52,17 @@ public class FileStorageService {
 
             //Copy file to the target location (Replacing existing file with the same name_)
             Path targetLocation = this.fileStorageLocation.resolve(fileName);
+
+            // save file
             Files.copy(file.getInputStream(), targetLocation, StandardCopyOption.REPLACE_EXISTING);
 
             return fileName;
         } catch (IOException e){
             throw new FileStorageException("Could not store file " + fileName + ". Please try again. ", e);
-
         }
     }
 
+    // load as resource
     public Resource loadFileAsResource(String fileName){
 
         try {

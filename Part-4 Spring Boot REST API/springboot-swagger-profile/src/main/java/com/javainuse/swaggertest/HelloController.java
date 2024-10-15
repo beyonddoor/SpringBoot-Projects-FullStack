@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 	
 	@RequestMapping(method = RequestMethod.GET, value = "/api/javainuse")
-<<<<<<< HEAD
 
 	public String sayHello() {
 		return "Swagger Hello World";
@@ -20,9 +19,4 @@ public class HelloController {
 		return "POST ";
 	}
 
-=======
-	public String sayHello() {
-		return "Swagger Hello World";
-	}
->>>>>>> a608fe36a37e7194bb4a3524350efcd6110d82ea
 }

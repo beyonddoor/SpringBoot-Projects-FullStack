@@ -16,8 +16,7 @@ import java.util.List;
  * @project SpringEmailProcess
  * @Author Hamdamboy
  */
-
-@ConfigurationProperties(prefix="myapp.mail")
+@ConfigurationProperties(prefix="myapp.mail")  // prefix for the properties
 @Validated
 public class MailProperties{
     //

@@ -25,6 +25,7 @@ public class AnnotationApplication implements CommandLineRunner {
     @Autowired
     private GitHubLookupService githubLookupService;
 
+    // create a thread pool
     @Bean("threadPoolTaskExecutor")
     public TaskExecutor getAsyncExecutor() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();

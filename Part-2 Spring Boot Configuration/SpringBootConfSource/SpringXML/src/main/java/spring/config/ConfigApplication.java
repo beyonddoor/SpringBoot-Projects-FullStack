@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ImportResource;
 import spring.config.service.MessageProcessor;
 
 @SpringBootApplication
-@ImportResource({"classpath*:applicationContext.xml"})
+@ImportResource({"classpath*:applicationContext.xml"})  // load the spring xml file
 public class ConfigApplication {
 
     public static void main(String[] args) {

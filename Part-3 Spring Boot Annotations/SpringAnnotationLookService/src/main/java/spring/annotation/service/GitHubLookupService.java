@@ -23,6 +23,7 @@ public class GitHubLookupService {
     //
     private static final Logger logger = LoggerFactory.getLogger(GitHubLookupService.class);
 
+    // old way to request http 
     private final RestTemplate restTemplate;
 
 
@@ -30,6 +31,7 @@ public class GitHubLookupService {
        this.restTemplate = restTemplateBuilder.build();
     }
 
+    // use the thread pool
     @Async("threadPoolTaskExecutor")
     public CompletableFuture<User> findUser(String user) throws InterruptedException {
         logger.info("Looking up : " + user);

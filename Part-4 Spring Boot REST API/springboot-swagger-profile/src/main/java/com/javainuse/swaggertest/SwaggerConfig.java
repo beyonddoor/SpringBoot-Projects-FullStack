@@ -20,6 +20,8 @@ import com.google.common.base.Predicate;
 @EnableSwagger2
 public class SwaggerConfig {
 
+	// enable swagger 
+
 	@Bean
 	public Docket postsApi() {
 		return new Docket(DocumentationType.SWAGGER_2).groupName("public-api")

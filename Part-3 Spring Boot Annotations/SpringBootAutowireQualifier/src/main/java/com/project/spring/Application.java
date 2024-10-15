@@ -15,6 +15,8 @@ public class Application {
         Alien alien = context.getBean(Alien.class);
         alien.show();
 
+        Laptop laptop = context.getBean(Laptop.class);
+        System.out.println(laptop);
 
     }
 

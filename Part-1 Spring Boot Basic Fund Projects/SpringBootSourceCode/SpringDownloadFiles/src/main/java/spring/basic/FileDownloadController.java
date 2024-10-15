@@ -19,8 +19,9 @@ import java.nio.file.Paths;
  * @Created 23 / 03 / 2020 - 9:36 AM
  * @project SpringDownloadFile
  * @Author Hamdamboy
+ * 
+ * 3 ways to download files using Spring Boot
  */
-
 @Controller
 public class FileDownloadController {
     //

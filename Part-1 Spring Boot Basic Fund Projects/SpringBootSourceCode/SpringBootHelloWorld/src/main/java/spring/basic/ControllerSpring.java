@@ -20,6 +20,8 @@ public class ControllerSpring {
     private static final String template = "Hello, %s !";
     private final AtomicLong counter = new AtomicLong();
 
+    // one object to serve all requests, maybe in multiple threads
+
     @GetMapping("/hey")
     public HelloSpring Greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
         return new HelloSpring(counter.incrementAndGet(), String.format(template, name));

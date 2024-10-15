@@ -31,6 +31,7 @@ public class ControllerMember{
         return "index";
     }
 
+    // use jsp to renderer
     @PostMapping("/adding")
     public String addMember(@RequestParam("name") String name, Model model){
         model.addAttribute("name", name);
